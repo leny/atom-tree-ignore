@@ -22,13 +22,18 @@ module.exports =
 
         _oAtomIgnoreFile = new File atom.project.resolve atom.config.get "tree-ignore.ignoreFileName"
 
+        _oAtomIgnoreFile.onDidChange => @update()
+        # TODO onDidRename ?
+        # TODO onDidDelete ?
+
+        # atom.project.getDirectories().forEach ( oDirectory ) =>
+        #     oDirectory.onDidChange =>
+        #         # TODO should wait that the tree is updated (how ?)
+        #         @update()
+
         atom.config.observe "tree-ignore.enabled", ( bNewValue ) =>
             _bHideState = bNewValue
             @update()
-
-        # TODO add watcher for _sAtomIgnoreFilePath, watching for its existence
-
-        # TODO add watcher for any change in tree
 
         atom.packages.onDidActivateAll => @update()
 
@@ -37,7 +42,7 @@ module.exports =
         @update()
 
     update: ->
-        return unless _oAtomIgnoreFile.exists()
+        return atom.workspaceView.find( ".tree-view li.entry" ).removeClass "tree-ignore-element" unless _oAtomIgnoreFile.exists()
         oIgnore = ignore().addIgnoreFile _oAtomIgnoreFile.getPath()
 
         atom.workspaceView.find( ".tree-view li.entry .name" ).each ->
