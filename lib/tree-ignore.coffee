@@ -17,6 +17,7 @@ module.exports =
 
     activate: ->
         atom.workspaceView.command "tree-ignore:toggle", => @toggle()
+        atom.workspaceView.command "tree-ignore:update", => @update()
 
         _bHideState = atom.config.get "tree-ignore.enabled"
 
