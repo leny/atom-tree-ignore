@@ -6,7 +6,7 @@
 
 ## Feature
 
-Sometimes, you want to hide some files & folders form the tree view. With Atom, you can make it globally, or for each project, *via* the `gitignore` file.  
+Sometimes, you want to hide some files & folders from the tree view. With Atom, you can make it globally, or for each project, *via* the `gitignore` file.  
 But... if you don't want to hide file globally, or ignore them in your repo ?
 
 Use an `.atomignore` file in your projects !
