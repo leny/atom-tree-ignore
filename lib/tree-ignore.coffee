@@ -44,9 +44,9 @@ module.exports =
         @update()
 
     update: ->
-        return atom.workspaceView.find( ".tree-view li.entry" ).removeClass "tree-ignore-element" unless _oAtomIgnoreFile.exists()
+        return $( atom.views.getView( atom.workspace ) ).find( ".tree-view li.entry" ).removeClass "tree-ignore-element" unless _oAtomIgnoreFile.exists()
         oIgnore = ignore().addIgnoreFile _oAtomIgnoreFile.getPath()
 
-        atom.workspaceView.find( ".tree-view li.entry .name" ).each ->
+        $( atom.views.getView( atom.workspace ) ).find( ".tree-view li.entry .name" ).each ->
             if sPath = ( $this = $( this ) ).data "path"
                 $this.parents( "li.entry" ).first().toggleClass "tree-ignore-element", _bHideState and !oIgnore.filter( [ sPath ] ).length
