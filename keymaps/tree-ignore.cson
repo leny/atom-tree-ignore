@@ -8,5 +8,5 @@
 # For more detailed documentation see
 # https://atom.io/docs/latest/advanced/keymaps
 
-'.workspace':
-  'shift-cmd-h': 'tree-ignore:toggle'
+'atom-workspace':
+  'cmd-shift-h': 'tree-ignore:toggle'

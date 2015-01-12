@@ -6,11 +6,11 @@
   "repository": "https://github.com/leny/atom-tree-ignore",
   "license": "MIT",
   "engines": {
-    "atom": ">0.138.0"
+    "atom": ">0.169.0"
   },
   "dependencies": {
-    "fs-plus": "^2.3.1",
+    "fs-plus": "^2.4.0",
     "ignore": "^2.2.15",
-    "pathwatcher": "^2.1.3"
+    "pathwatcher": "^2.5.0"
   }
 }
