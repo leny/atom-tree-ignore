@@ -11,6 +11,6 @@
   "dependencies": {
     "fs-plus": "^2.4.0",
     "ignore": "^2.2.15",
-    "pathwatcher": "^2.5.0"
+    "pathwatcher": "^4.0.0"
   }
 }
