@@ -1,7 +1,7 @@
 fs = require "fs-plus"
 {File} = require 'pathwatcher'
 ignore = require "ignore"
-$ = require( "atom" ).$
+$ = require "jquery"
 
 _oAtomIgnoreFile = null
 _bHideState = null
@@ -22,7 +22,7 @@ module.exports =
 
         _bHideState = atom.config.get "tree-ignore.enabled"
 
-        _oAtomIgnoreFile = new File atom.project.resolve atom.config.get "tree-ignore.ignoreFileName"
+        _oAtomIgnoreFile = new File atom.project.getDirectories()[0]?.resolve atom.config.get "tree-ignore.ignoreFileName"
 
         _oAtomIgnoreFile.onDidChange => @update()
         # TODO onDidRename ?
@@ -37,7 +37,7 @@ module.exports =
             _bHideState = bNewValue
             @update()
 
-        atom.packages.onDidActivateAll => @update()
+        atom.packages.onDidActivateInitialPackages => @update()
 
     toggle: ->
         _bHideState = not _bHideState

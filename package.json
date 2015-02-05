@@ -11,6 +11,7 @@
   "dependencies": {
     "fs-plus": "^2.4.0",
     "ignore": "^2.2.15",
+    "jquery": "^2",
     "pathwatcher": "^4.0.0"
   }
 }
