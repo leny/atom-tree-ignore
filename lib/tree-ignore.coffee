@@ -44,7 +44,7 @@ module.exports =
         @update()
 
     update: ->
-        return $( atom.views.getView( atom.workspace ) ).find( ".tree-view li.entry" ).removeClass "tree-ignore-element" unless _oAtomIgnoreFile.exists()
+        return $( atom.views.getView( atom.workspace ) ).find( ".tree-view li.entry" ).removeClass "tree-ignore-element" unless _oAtomIgnoreFile.existsSync()
         oIgnore = ignore().addIgnoreFile _oAtomIgnoreFile.getPath()
 
         $( atom.views.getView( atom.workspace ) ).find( ".tree-view li.entry .name" ).each ->
