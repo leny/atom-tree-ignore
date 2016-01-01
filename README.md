@@ -17,10 +17,8 @@ It works like a regular `.gitignore` file, but only hide the files & folders in 
 
 Simply add an `.atomignore` file in your project.
 
-You can also toggle the hiding temporary by using `shift-cmd-h` keys.
+You can also toggle the hiding temporary by using `tree-ignore:toggle` command.
 
-## Todos
+## Keybindings
 
-* [ ] Update the tree-view at each file/folder change
-* [ ] Update the tree-view when `.atomignore` is created/deleted
-* [ ] Add ability to add a file/folder to `.atomignore` from the tree-view
+With the success of Atom, it's really difficult to choose keybindings that will not enter in conflict whit anyone else's packages, so I have removed the default keystrokes and let the keymap empty to let you set your own keybindings.

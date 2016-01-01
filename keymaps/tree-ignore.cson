@@ -1,12 +1,7 @@
-# Keybindings require three things to be fully defined: A selector that is
-# matched against the focused element, the keystroke and the command to
-# execute.
-#
-# Below is a basic keybinding which registers on all platforms by applying to
-# the root workspace element.
+# With the success of Atom, it's really difficult to choose keybindings that
+# will not enter in conflict whit anyone else's packages, so I let this file
+# empty to set your own keybindings.
+# For you informations, here's an exemple of my keybindings for tree-ignore
 
-# For more detailed documentation see
-# https://atom.io/docs/latest/advanced/keymaps
-
-'atom-workspace':
-  'cmd-shift-h': 'tree-ignore:toggle'
+# 'atom-workspace':
+#   'cmd-shift-h': 'tree-ignore:toggle'
