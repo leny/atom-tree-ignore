@@ -1,3 +1,5 @@
 CHANGELOG.md
 LICEN*
 *.cson
+.eslintrc*
+.gitignore
