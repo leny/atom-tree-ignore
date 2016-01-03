@@ -17,7 +17,7 @@ It works like a regular `.gitignore` file, but only hide the files & folders in 
 
 Simply add an `.atomignore` file in your project.
 
-You can also toggle the hiding temporary by using `tree-ignore:toggle` command.
+You can also control the state of hiding by using `tree-ignore:toggle`, `tree-ignore:enable` & `tree-ignore:disable` commands.
 
 ## Keybindings
 
