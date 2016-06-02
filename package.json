@@ -1,7 +1,7 @@
 {
   "name": "tree-ignore",
   "main": "./lib/tree-ignore",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "Use a .atomignore file to hide files & folder in tree view",
   "repository": "https://github.com/leny/atom-tree-ignore",
   "license": "MIT",
