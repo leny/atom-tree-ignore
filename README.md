@@ -21,4 +21,4 @@ You can also control the state of hiding by using `tree-ignore:toggle`, `tree-ig
 
 ## Keybindings
 
-With the success of Atom, it's really difficult to choose keybindings that will not enter in conflict whit anyone else's packages, so I have removed the default keystrokes and let the keymap empty to let you set your own keybindings.
+With the success of Atom, it's really difficult to choose keybindings that will not enter in conflict with anyone else's packages, so I have removed the default keystrokes and let the keymap empty to let you set your own keybindings.
